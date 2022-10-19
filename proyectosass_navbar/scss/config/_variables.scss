@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2? family= Antonio:wght@400;500;600 & display=swap');
+
+/* == Variables CSS ==*/
+
+:root{
+    --header-height: 3.5rem;
+    /*== Colores: modo HSL ==*/
+    --first-color: hsl(273, 97%, 66%); 
+    --first-color-shape: hsl(253, 33%, 32%);
+    --title-color: hsl(273, 8%, 15%);
+    --text-color: hsl(273, 8%, 15%);
+    --body-color: hsl(273, 100%, 99%);
+    --container-color: hsla(0, 0%, 100%);
+    --title-color-dark: hsla(273, 83%, 98%);
+    --text-color-dark: hsla(273, 21%, 56%);
+    --container-color-dark: hsla(273, 80%, 16%);
+ 
+    /*== Tipografia y tipos de letra ==*/
+    --body-font: 'poppins', sans-serif;
+
+    --big-font-size: 1.5rem
+    --normal-font-size: .938rem ;
+    --samll-font-size: .831rem;
+
+
+    /*== Tipografia responsive ==*/
+    @media screen and (min-width:968px){
+        --bi-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+    }
+
+    /*== Z Index ==*/
+    --z-fixed: 100;
+}

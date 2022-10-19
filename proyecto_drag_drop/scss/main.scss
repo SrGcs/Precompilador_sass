@@ -1,0 +1,108 @@
+/*== TIPO DE LETRA ==*/
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;600&family=Ubuntu:wght@400;500&display=swap');
+
+
+/* == VARIABLES CSS ==*/
+ 
+:root{
+    --first-color:#1e1616;
+    --first-color-light:#fdfdfd;
+    --first-color-lighten:#cccccc;
+
+    /*== TIPOGRAFIA DE LETRA ==*/
+
+    --body-font: 'Ubuntu', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .813; 
+}
+
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    background-color: var(--first-color-lighten);
+}
+h1{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* == DISEÑO DRAG AND DROP ==*/
+
+.drop, .drop_container{
+    display: grid;
+}
+
+
+.drop{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.drop_container{
+    row-gap: 1rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 16px #000000; 
+}
+
+
+.drop_card, .drop_data{
+    display: flex;
+    align-items: center;
+}
+
+.drop_card{
+    width: 360px;
+    justify-content: space-between;
+    padding: .75rem 1.25rem .75rem .75rem;
+    background-color: var(--first-color-lighten);
+    box-shadow: 4px 4px 16px #ffc2c2, -2px -2px 16px #fff;
+    border-radius: 2.5rem;
+}
+
+.drop_img{
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.drop_nombre{
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    font-weight: 700;
+}
+
+.drop_perfil{
+    font-size: var(--small-font-size);
+    color: var(--first-color-light);
+}
+
+.drop_social{
+    margin: 0 .375;
+    color: var(--first-color-light);
+    transition: 0.4s;
+}
+
+.drop_social:hover{
+    color: var(--first-color);
+}
+
+.sortable-chosen{
+    box-shadow: #272A3A;
+}
+
+.sortable-drag{
+    opacity: 0;
+}

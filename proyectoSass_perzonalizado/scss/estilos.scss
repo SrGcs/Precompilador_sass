@@ -1,0 +1,79 @@
+$principal: rgb(64, 129, 69);
+
+$primary: $principal;
+$enable-shadow: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+.btn-primary {
+    border-bottom: 3px solid rgba(10, 9, 9, 0.9)
+}
+
+.custom-class {
+    display: none;
+}
+
+@include media-breakpoint-up(xs) {
+    .custom-class {
+        display: block;
+        background-image: url("../img/fondo.jpg");
+        height: 300px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class-0 {
+        display: flex;
+        background-image: url(../img/jordan1.1.jpg);
+        height: 300px;
+        width: 220px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class {
+        display: flex;
+        height: 400px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class {
+        display: flex;
+        height: 200px;
+    }
+}
+@include media-breakpoint-up(xs) {
+    .custom-class-2 {
+        display: flex;
+        background-image: url(../img/jordan1.jpg);
+        height: 200px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class-3 {
+        display: flex;
+        background-image: url(../img/jordan1.1.jpg);
+        height: 100px;
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class-2 {
+        display: flex;
+        height: 400px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class-2 {
+        display: flex;
+        height: 200px;
+    }
+}
